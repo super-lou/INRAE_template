@@ -16,7 +16,7 @@ This project was carried out for National Research Institute for Agriculture, Fo
 ```
 git clone https://github.com/super-lou/INRAE_template.git
 ```
-or download the (zip)[https://github.com/super-lou/INRAE_template/archive/refs/heads/main.zip].
+or download the [zip](https://github.com/super-lou/INRAE_template/archive/refs/heads/main.zip).
 
 
 #### For INRAE agent

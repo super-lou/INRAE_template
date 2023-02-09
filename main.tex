@@ -1,0 +1,217 @@
+\documentclass{config}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{float}%H figure table
+\usepackage{upgreek}%updelta
+\usepackage{indentfirst} %compenser l'absence d'indentation en debut de nouveau par
+\usepackage[table]{xcolor} %tableau et couleur dans tableau
+\usepackage{hyperref}%lien
+\usepackage{wrapfig}
+\usepackage{gensymb}%\degree
+\usepackage{wasysym}
+\definecolor{myGrey}{RGB}{251,251,251}
+\usepackage[position=bottom]{subfig}
+\usepackage{mathtools}
+\usepackage[square]{natbib} % cite
+\usepackage{rotating} % rotation of table
+
+% inserting pdf
+\usepackage{pdfpages}
+
+% highlight
+\usepackage{soul}
+
+% image positionning
+\usepackage{graphicx}
+
+% background image
+\usepackage{watermark}
+
+% inline 
+\usepackage{calc}
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+}
+\usepackage{lipsum}
+
+% font
+\usepackage{fontspec}
+\setmainfont[
+  Path=Police/Avenir Next Pro Complete Family Pack/,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-It,
+  Extension=.otf
+  ]{Linotype - AvenirNextLTPro}
+
+\setsansfont[
+  Path=Police/Raleway/,
+  UprightFont=*-Regular,
+  BoldFont=*-ExtraBold,
+  ItalicFont=*-Italic,
+  Extension=.ttf
+  ]{Raleway}
+
+% foot
+\fancyfoot[L]{
+\watermark{
+\centering
+\put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
+{\hspace*{-1.5cm}\large\bfseries\color{Cyan}\sffamily Titre} \\
+{\hspace*{-1.5cm}\small\normalfont\color{Cyan} Louis HÉRAUT} \\
+{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} INRAE centre Lyon-Grenoble Auvergne-Rhône-Alpes} \\
+{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} Riverly} \\
+{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} février 2023}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\thispagestyle{empty}
+\thiswatermark{
+\centering
+\put(-3cm, -22.9cm){\includegraphics[width=10.5cm]{cover/AE.pdf}}
+\put(12.76cm, -1.7cm){\includegraphics[width=3.2cm]{cover/INRAE.pdf}}
+\put(0.3cm, -16.46cm){\includegraphics[height=0.7cm]{cover/arrow.pdf}}
+}
+
+\vspace*{15cm}
+
+{\noindent\hspace*{1cm} \sffamily\bfseries\color{DarkCyan}\huge Titre}\\
+
+\vspace*{0cm}
+
+{\noindent\hspace*{1cm} \sffamily\bfseries\color{Cyan}\Large Sous-Titre}
+
+\newpage
+\watermark{
+\centering
+\put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Des fois c'est bien d'être concis
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+{\hypersetup{linkcolor=LightCyan}\tableofcontents}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Section 1}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \vspace{-4mm}
+    \includegraphics[width=0.37\textwidth]{figures/figure1.jpg}
+    \vspace{-1mm}
+    \captionsetup{width=0.37\textwidth}
+    \caption{Une couleur et un style qui change un peu (pas trop quand même)}
+    \label{fig:figure1}
+    \vspace{-15mm}
+\end{wrapfigure}
+\lipsum[1][1] \href{https://makaho.sk8.inrae.fr/}{lien} \lipsum[1][2] citation entre parenthèse \citep{foote1856circumstances, doyle1992adventures} et citation intégrée \citet{template}.\par
+\lipsum[1][3-5]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Section 2}
+\subsection{Sous Section 1}
+\lipsum[2]
+
+\begin{itemize}
+\item item 1
+\item item 2
+\end{itemize}
+\vspace{2mm}
+
+\lipsum[3]
+
+\begin{table}[H]
+\centering
+{\color{DarkCyan}
+\begin{tabular}{l c c c c}
+\arrayrulecolor{Grey}
+\rowcolor{LightGrey}
+\thead{Variable} & \thead{Compliqué} & \thead{Encore plus compliqué} & \thead{Jsp} \\
+ \sethlcolor{Blue}\hl{ } \thead{QJXA} & 10 ans & 3 jours & Aucun \\
+ \hline
+ \sethlcolor{Blue}\hl{ } \thead{tQJXA} & 10 ans & 3 jours & Aucun \\
+ \hline
+ \sethlcolor{LightBlue}\hl{ } \thead{tCENfonte} & 10 ans & 3 jours & Aucun \\
+ \hline
+ \sethlcolor{Green}\hl{ } \thead{QA} & 10 ans & 3 jours & Aucun \\
+ \hline
+ \sethlcolor{Red}\hl{ } \thead{QMNA} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
+ \hline
+ \sethlcolor{Red}\hl{ } \thead{VCN10} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
+ \hline 
+\end{tabular}
+}
+\vspace{0.3cm}
+\caption{Tableau récapitulatif des chose compliquées et autres en hydrologie.}
+\label{table:tab}
+\end{table}
+
+\subsection{Sous Section 2}
+\lipsum[4]
+
+\subsubsection*{Sous sous section 1}
+\noindent \lipsum[5][1]
+
+\subsubsection*{Sous sous section 2}
+\noindent \noindent \lipsum[5][2]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Section 3}
+\lipsum[6] {\bfseries\color{Blue}Crue}, {\bfseries\color{LightBlue}Crue Nivale}, {\bfseries\color{Green}Moyennes Eaux} et {\bfseries\color{Red}Étiage}
+et parfois des jolies balades en Figure \ref{fig:figure2} (enfin pour ceux qui aime marcher).
+
+\begin{figure}[H]
+  \centering
+  \vspace{0mm}
+  \includegraphics[width=1\textwidth]{figures/figure2.jpg}
+  \vspace{-2mm}
+  \caption{Je l'ai piqué \href{https://saam.inrae.fr/}{là}.}
+  \label{fig:figure2}
+  \vspace{-1mm}
+\end{figure}
+
+\lipsum[7-8] 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+{
+\label{page:fiche}
+\thiswatermark{}
+\pagestyle{empty}
+\includepdf[pages={1}]{figures/page.jpg}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Bibliographie}
+\vspace{-0.9cm}
+\bibliography{ref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -21,7 +21,7 @@ or download the [zip](https://github.com/super-lou/INRAE_template/archive/refs/h
 
 #### For INRAE agent
 About fonts that are non-free :
-- Download fonts [here](https://intranet.inra.fr/charte-identitaire/content/download/3007/30036/version/5/file/POLICES.zip)
+- Download fonts [here](https://charte-identitaire.intranet.inrae.fr/valises-de-polices)
 - Unzip it
 - Find *Avenir Next Pro Complete Family Pack.zip* and *Raleway.zip* folder
 - Unzip them in a folder named *font* in the *INRAE_template* directory

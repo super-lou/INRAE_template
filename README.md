@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/last-commit/super-lou/INRAE_template)
 <!-- badges: end -->
 
-**[INRAE_template](https://github.com/super-lou/INRAE_template/raw/main/main.pdf)** is a LaTeX template that follow INRAE visual identity guidelines.
+**[INRAE_template](https://github.com/super-lou/INRAE_template/raw/main/main.pdf)** is a LaTeX template made with [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX) that follow INRAE visual identity guidelines.
 
 This project was carried out for National Research Institute for Agriculture, Food and the Environment (Institut National de Recherche pour l’Agriculture, l’Alimentation et l’Environnement, [INRAE](https://agriculture.gouv.fr/inrae-linstitut-national-de-recherche-pour-lagriculture-lalimentation-et-lenvironnement) in french).
 

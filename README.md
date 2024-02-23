@@ -3,6 +3,7 @@
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green)](https://lifecycle.r-lib.org/articles/stages.html)
 ![](https://img.shields.io/github/last-commit/super-lou/INRAE_template)
+![GitHub Releases](https://img.shields.io/github/downloads/super-lou/INRAE_template/total.svg)
 <!-- badges: end -->
 
 **[INRAE_template](https://github.com/super-lou/INRAE_template/raw/main/main.pdf)** is a LaTeX template made with [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX) that follow INRAE visual identity guidelines.

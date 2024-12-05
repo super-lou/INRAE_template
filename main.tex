@@ -41,30 +41,29 @@
 }
 \usepackage{lipsum}
 
-
 % footer
 \fancyfoot[L]{
-\watermark{
-\centering
-\put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
-{\hspace*{-1.5cm}\large\bfseries\color{Cyan}\sffamily Titre} \\
-{\hspace*{-1.5cm}\small\normalfont\color{Cyan} Louis HÉRAUT} \\
-{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} INRAE centre Lyon-Grenoble Auvergne-Rhône-Alpes} \\
-{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} Riverly} \\
-{\hspace*{-1.5cm}\small\normalfont\color{LightCyan} février 2023}}
+  \watermark{
+    \centering
+    \put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
+  {\hspace*{-1.5cm}\large\bfseries\color{Cyan}\sffamily Titre} \\
+  {\hspace*{-1.5cm}\small\normalfont\color{Cyan} Louis HÉRAUT} \\
+  {\hspace*{-1.5cm}\small\normalfont\color{LightCyan} INRAE centre Lyon-Grenoble Auvergne-Rhône-Alpes} \\
+  {\hspace*{-1.5cm}\small\normalfont\color{LightCyan} Riverly} \\
+  {\hspace*{-1.5cm}\small\normalfont\color{LightCyan} février 2023}}
 
 
 \bibliography{bibliography}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{document}
 \thispagestyle{empty}
 \thiswatermark{
-\centering
-\put(-3cm, -22.9cm){\includegraphics[width=10.5cm]{cover/AE.pdf}}
-\put(12.76cm, -1.7cm){\includegraphics[width=3.2cm]{cover/INRAE.pdf}}
-\put(0.3cm, -16.46cm){\includegraphics[height=0.7cm]{cover/arrow.pdf}}
+  \centering
+  \put(-3cm, -22.9cm){\includegraphics[width=10.5cm]{cover/AE.pdf}}
+  \put(12.76cm, -1.7cm){\includegraphics[width=3.2cm]{cover/INRAE.pdf}}
+  \put(0.3cm, -16.46cm){\includegraphics[height=0.7cm]{cover/arrow.pdf}}
 }
 
 \vspace*{15cm}
@@ -77,34 +76,34 @@
 
 \newpage
 \watermark{
-\centering
-\put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
+  \centering
+  \put(-3cm, -28.42cm){\includegraphics[width=6.5cm]{cover/AE_light.pdf}}}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{abstract}
-Lorem lipsum
+  Lorem lipsum
 \end{abstract}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage 
 {\hypersetup{linkcolor=LightCyan}\tableofcontents}
 \newpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \chapter{Chapter 1}
 \section{Section 1}
 \begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \vspace{-4mm}
-    \includegraphics[width=0.37\textwidth]{figures/figure1.jpg}
-    \vspace{-1mm}
-    \captionsetup{width=0.37\textwidth}
-    \caption{Une couleur et un style qui change un peu (pas trop quand même)}
-    \label{fig:figure1}
-    \vspace{-15mm}
+  \centering
+  \vspace{-4mm}
+  \includegraphics[width=0.37\textwidth]{figures/figure1.jpg}
+  \vspace{-1mm}
+  \captionsetup{width=0.37\textwidth}
+  \caption{Une couleur et un style qui change un peu (pas trop quand même)}
+  \label{fig:figure1}
+  \vspace{-15mm}
 \end{wrapfigure}
 \lipsum[1][1-4] citation entre parenthèse \citep{foote1856circumstances, doyle1992adventures} et citation intégrée \citet{template}.\par
 \lipsum[1][5] \href{https://makaho.sk8.inrae.fr/}{lien}.
@@ -124,29 +123,29 @@ Lorem lipsum
 \lipsum[3]
 
 \begin{table}[H]
-\centering
-{\color{DarkCyan}
-\begin{tabular}{l c c c c}
-\arrayrulecolor{Grey}
-\rowcolor{LightGrey}
-\thead{Variable} & \thead{Compliqué} & \thead{Encore plus compliqué} & \thead{Jsp} \\
- \sethlcolor{Blue}\hl{ } \thead{QJXA} & 10 ans & 3 jours & Aucun \\
- \hline
- \sethlcolor{Blue}\hl{ } \thead{tQJXA} & 10 ans & 3 jours & Aucun \\
- \hline
- \sethlcolor{LightBlue}\hl{ } \thead{tCENfonte} & 10 ans & 3 jours & Aucun \\
- \hline
- \sethlcolor{Green}\hl{ } \thead{QA} & 10 ans & 3 jours & Aucun \\
- \hline
- \sethlcolor{Red}\hl{ } \thead{QMNA} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
- \hline
- \sethlcolor{Red}\hl{ } \thead{VCN10} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
- \hline 
-\end{tabular}
-}
-\vspace{0.3cm}
-\caption{Tableau récapitulatif des chose compliquées et autres en hydrologie.}
-\label{table:tab}
+  \centering
+  {\color{DarkCyan}
+    \begin{tabular}{l c c c c}
+      \arrayrulecolor{Grey}
+      \rowcolor{LightGrey}
+      \thead{Variable} & \thead{Compliqué} & \thead{Encore plus compliqué} & \thead{Jsp} \\
+      \sethlcolor{Blue}\hl{ } \thead{QJXA} & 10 ans & 3 jours & Aucun \\
+      \hline
+      \sethlcolor{Blue}\hl{ } \thead{tQJXA} & 10 ans & 3 jours & Aucun \\
+      \hline
+      \sethlcolor{LightBlue}\hl{ } \thead{tCENfonte} & 10 ans & 3 jours & Aucun \\
+      \hline
+      \sethlcolor{Green}\hl{ } \thead{QA} & 10 ans & 3 jours & Aucun \\
+      \hline
+      \sethlcolor{Red}\hl{ } \thead{QMNA} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
+      \hline
+      \sethlcolor{Red}\hl{ } \thead{VCN10} & 10 ans & 3 jours & $1^{\text{ier}}$ Mai / 30 Nov. \\
+      \hline 
+    \end{tabular}
+  }
+  \vspace{0.3cm}
+  \caption{Tableau récapitulatif des chose compliquées et autres en hydrologie.}
+  \label{table:tab}
 \end{table}
 
 \lipsum[4]
@@ -165,7 +164,7 @@ Lorem lipsum
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \chapter{Chapter 2}
 \section{Section 1}
 \lipsum[9] {\bfseries\color{Blue}Crue}, {\bfseries\color{LightBlue}Crue Nivale}, {\bfseries\color{Green}Moyennes Eaux} et {\bfseries\color{Red}Étiage}
@@ -184,30 +183,31 @@ et parfois des jolies balades en Figure \ref{fig:figure2} (enfin pour ceux qui a
 \lipsum[10-11] 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \bibchapter{Bibliographie}
+% \section{Bibliographie}
 \printbibliography[heading=none]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 {
-\thiswatermark{}
-\pagestyle{empty}
-\includepdf[pages={1}]{figures/inrae_style_page.pdf}
+  \thiswatermark{}
+  \pagestyle{empty}
+  \includepdf[pages={1}]{figures/inrae_style_page.pdf}
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 {
-\thiswatermark{}
-\pagestyle{empty}
-\includepdf[pages={1}]{figures/inrae_credential_page.pdf}
+  \thiswatermark{}
+  \pagestyle{empty}
+  \includepdf[pages={1}]{figures/inrae_credential_page.pdf}
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \end{document}
 
 

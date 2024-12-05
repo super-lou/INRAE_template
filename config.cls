@@ -22,17 +22,16 @@
 \RequirePackage{amsmath}
 
 \RequirePackage[
-    natbib=true,
-    url=false,
-    eprint=false,
-    style=authoryear,
-    maxcitenames=2,
-    %maxbibnames=5,
-    giveninits=true,
-    uniquename=init,
-    backend=bibtex
+natbib=true,
+url=false,
+eprint=false,
+style=authoryear,
+maxcitenames=2,
+% maxbibnames=5,
+giveninits=true,
+uniquename=init,
+backend=bibtex
 ]{biblatex}
-
 
 
 %% COMPILATEUR _______________________________________________________
@@ -51,14 +50,14 @@
 \ifxetexorluatex
   \RequirePackage[no-math]{fontspec}
   \let\boldsymbol\symbf
-% Patch microtype for older versions; from https://tex.stackexchange.com/a/373607/226
+  % Patch microtype for older versions; from https://tex.stackexchange.com/a/373607/226
   \@ifpackagelater{microtype}{2017/07/05}{}{%
     \patchcmd{\MT@is@composite}
-      {\expandafter\expandafter\expandafter}
-      {\ifx\UnicodeEncodingName\@undefined\else
-      \expandafter\expandafter\expandafter\MT@is@uni@comp\MT@char\iffontchar\else\fi\relax
-    \fi\expandafter\expandafter\expandafter}
-      {}{}
+    {\expandafter\expandafter\expandafter}
+    {\ifx\UnicodeEncodingName\@undefined\else
+        \expandafter\expandafter\expandafter\MT@is@uni@comp\MT@char\iffontchar\else\fi\relax
+      \fi\expandafter\expandafter\expandafter}
+    {}{}
     \def\MT@is@uni@comp#1\iffontchar#2\else#3\fi\relax{%
       \ifx\\#2\\\else\edef\MT@char{\iffontchar#2\fi}\fi
     }
@@ -102,25 +101,25 @@
 %% FONT ______________________________________________________________
 \usepackage{fontspec}
 \setmainfont[
-  Path=font/Avenir Next Pro Complete Family Pack/,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  ItalicFont=*-It,
-  Extension=.otf
-  ]{Linotype - AvenirNextLTPro}
+Path=font/Avenir Next Pro Complete Family Pack/,
+UprightFont=*-Regular,
+BoldFont=*-Bold,
+ItalicFont=*-It,
+Extension=.otf
+]{Linotype - AvenirNextLTPro}
 
 \setsansfont[
-  Path=font/Raleway/,
-  UprightFont=*-Regular,
-  BoldFont=*-ExtraBold,
-  ItalicFont=*-Italic,
-  Extension=.ttf
-  ]{Raleway}
+Path=font/Raleway/,
+UprightFont=*-Regular,
+BoldFont=*-ExtraBold,
+ItalicFont=*-Italic,
+Extension=.ttf
+]{Raleway}
 
 \newfontfamily\ralewayblack[
-  Path=font/Raleway/,
-  UprightFont=*-Black,
-  Extension=.ttf
+Path=font/Raleway/,
+UprightFont=*-Black,
+Extension=.ttf
 ]{Raleway}
 \DeclareTextFontCommand{\textblack}{\ralewayblack}
 
@@ -129,15 +128,15 @@
 
 %% ABSTRACT __________________________________________________________
 \renewcommand{\abstractname}{
-    {\textcolor{Cyan}{\rule{0.4cm}{1.2\p@}}} \hspace{0.1cm}
-        {\LARGE\bfseries\color{Cyan}\sffamily Résumé \hspace{0.1cm}}
-    {\textcolor{Cyan}{\rule{11.8cm}{1.2\p@}}}\par\vspace{0.1cm}}
+  {\textcolor{Cyan}{\rule{0.4cm}{1.2\p@}}} \hspace{0.1cm}
+  {\LARGE\bfseries\color{Cyan}\sffamily Résumé \hspace{0.1cm}}
+  {\textcolor{Cyan}{\rule{11.8cm}{1.2\p@}}}\par\vspace{0.1cm}}
 \setlength{\absleftindent}{\z@}
 \setlength{\absrightindent}{\absleftindent}
 \preto{\abstract}{%
   \setlength{\parindent}{\z@}%
   \newcommand{\keywords}[1]{%
-  \emph{\footnotesize\@keywordsname : }\footnotesize#1\par
+    \emph{\footnotesize\@keywordsname : }\footnotesize#1\par
   }
 }
 \appto{\abstract}{%
@@ -200,17 +199,17 @@
     \addcontentsline{toc}{section}{#1}%
   }
 
-  
+
 \newcommand{\bibchapter}[1]{%
-    \clearpage
-    \null
-    \thispagestyle{empty}
-    \vspace*{\fill}
-    {\Huge\bfseries\sffamily\color{LightCyan} #1\par} % Centered title
-    \vfill
-    \newpage
-    \addtocontents{toc}{\vspace{0.5cm}}
-    \addcontentsline{toc}{section}{#1}
+  \clearpage
+  \null
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  {\Huge\bfseries\sffamily\color{LightCyan} #1\par} % Centered title
+  \vfill
+  \newpage
+  \addtocontents{toc}{\vspace{0.5cm}}
+  \addcontentsline{toc}{section}{#1}
 }
 
 
@@ -243,7 +242,7 @@
 %% FOOTER ____________________________________________________________
 \pagestyle{fancy}
 \fancyfoot[R]{
-{\large\color{Cyan} p. {\LARGE\sffamily\thepage}}
+  {\large\color{Cyan} p. {\LARGE\sffamily\thepage}}
 }
 
 

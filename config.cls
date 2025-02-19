@@ -82,6 +82,7 @@ backend=bibtex
 
 %% COLOR _____________________________________________________________
 \definecolor{Text}{RGB}{35, 31, 32}
+\definecolor{LighterCyan}{RGB}{194, 230, 229}
 \definecolor{LightCyan}{RGB}{102, 193, 191}
 \definecolor{Cyan}{RGB}{0, 163, 166}
 \definecolor{DarkCyan}{RGB}{39, 86, 98}
@@ -159,19 +160,24 @@ Extension=.ttf
 \setlength{\cftsecnumwidth}{0.7cm}
 \renewcommand{\cftsecfont}{\bfseries\Large\sffamily}
 \renewcommand\cftsecpagefont{\normalfont\Large\sffamily}
+\renewcommand{\cftsecleader}{\color{LighterCyan}\cftdotfill{\cftdotsep}}
 
 \setlength{\cftbeforesubsecskip}{0.7mm}
 \setlength{\cftsubsecnumwidth}{1cm}
 \renewcommand{\cftsubsecfont}{\bfseries\large\sffamily}
 \renewcommand\cftsubsecpagefont{\normalfont\large\sffamily}
+\renewcommand{\cftsubsecleader}{\color{LighterCyan}\cftdotfill{\cftdotsep}}
 
 % \setlength{\cftsubsubsecnumwidth}{0.1cm}
 % \renewcommand{\cftsubsubsecfont}{\normalfont\normalsize\sffamily}
 % \renewcommand\cftsubsubsecpagefont{\normalfont\Large\sffamily}
 
+% \renewcommand{\cftsubsubsecpagefont}{}
+\cftpagenumbersoff{subsubsection}
+
 % \renewcommand\cftsecafterpnum{\vspace{0.1cm}}
 
-\renewcommand{\cftdot}{}
+% \renewcommand{\cftdot}{}
 
 
 %% CHAPTER ___________________________________________________________
